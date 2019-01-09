@@ -1,0 +1,5 @@
+dungeon_finder
+*.o
+*.a
+test
+*.mca
