@@ -25,14 +25,23 @@ The ids following `-i` and `-e` should be comma separated, with no spaces in and
 
 The path to minecraft savegame region folder or .mca file should be the last option.
 
-(Currently only searching through a directory is supported)
+### Example Usage:
 
+use 3 threads to search for skeleton spawners in the nether
+
+```
+./dungeon_finder -t 3 -i minecraft:skeleton /home/mc/savedata1/world/DIM-1/
+```
+
+Search for all spawners that are not spider spawners in the overworld
+
+```
+./dungeon_finder -e minecraft:cave_spider,minecraft:spider /home/mc/savedata1/world/region/
+```
 
 ## Why C?
 
 This is a project for personal practice, so I chose the language that I had no individual project experience with.
-
-~~Plus, C is fast ( \~500M savegame on SSD with 6 threads took only 0.7s )~~
 
 For additional practice purposes, I wrote my own versions of thread-safe hashtable, vector and queue.
 
@@ -43,3 +52,4 @@ The repository can be found at [https://github.com/AlexHalogen/C_data_structures
 - [ ] Improve command line arguments parsing
 - [ ] Revise the part of matching NBT tag names
 - [ ] Port to Windows
+- [ ] Minecraft 1.14+ support

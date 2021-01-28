@@ -6,6 +6,8 @@
 # it, you can buy us a beer in return.
 # -----------------------------------------------------------------------------
 
+.PHONY: clean
+
 CFLAGS=-g -Wall -Wextra -std=c99 -pedantic -fPIC
 
 all: nbtreader check
@@ -32,3 +34,6 @@ nbt_loading.o: nbt_loading.c
 nbt_parsing.o: nbt_parsing.c
 nbt_treeops.o: nbt_treeops.c
 nbt_util.o: nbt_util.c
+
+clean:
+	rm -f *.o *.a nbtreader check test

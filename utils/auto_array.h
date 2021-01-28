@@ -1,6 +1,6 @@
 #pragma once
 #include <stdlib.h>
-#include "utils/callbacks.h"
+#include "callbacks.h"
 /*
  * Simplistic array wrapping that allows automatic growing of the array
  * Array accepts any type of data, and data is guaranteed to be contigious in

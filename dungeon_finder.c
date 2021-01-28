@@ -16,8 +16,8 @@
 
 // #include <zlib.h>
 #include <pthread.h>
-#include "queue.h"
-#include "auto_array.h"
+#include "utils/queue.h"
+#include "utils/auto_array.h"
 #include "utils/callbacks.h"
 #include "cNBT/nbt.h"
 #include "cNBT/list.h"
